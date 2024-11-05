@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Section to PDF</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    #controls {
+      margin: 15px 0;
+    }
+    #convertBtn {
+      background: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #34a853;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    #error-message {
+      color: red;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="controls">
+      <button id="convertBtn">Convert Section to PDF</button>
+      <script src="libs/html2pdf.bundle.min.js"></script>
+      <script src="popup.js"></script>
+    </div>
+
+    <div id="resultMessage">
+      <p></p>
+    </div>
+  </div>
+</body>
+</html>
